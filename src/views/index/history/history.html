@@ -1,0 +1,200 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=GB2312">
+  <meta http-equiv="Content-Language" content="utf-8" />
+  <meta name="robots" content="all" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <meta name="filetype" content="1">
+  <meta name="publishedtype" content="1">
+  <meta name="pagetype" content="2">
+  <meta name="catalogs" content="70509">
+  <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+  <title>10月23日--资料中心--人民网</title>
+  <!-- 调用样式表 -->
+
+  <link rel="stylesheet"  href="/img/2010cpc_lishishangdejintian/page.css" type="text/css" media="all"  />
+  <script src="/img/2010cpc_lishishangdejintian/swfobject.js" language="javascript"></script>
+  <!--党网检索-->
+  <script src="/css/cpcsearch.js"></script>
+  <script language="javascript">
+    function go(){
+      if (document.publish.content.value==null || document.publish.content.value=="" ) {
+        alert("发言内容不能为空！");
+        return;
+      }else if(document.publish.yanzhengma.value==null || document.publish.yanzhengma.value==""){
+        alert("请输入验证码！");
+        return;
+      }
+      else {
+        document.publish.submit();
+      }
+    }
+    function renew_parent(form,parent_token)
+    {
+      form.pid.value=parent_token;
+    }
+  </script>
+  <script language="JavaScript">
+    function gotxt() {
+
+      var today = new Date();
+      var bday = new Date(2011,01,01);
+
+      tf=document.dateform;
+      vd=tf.sday.options[tf.sday.selectedIndex].value;
+      vm=tf.smonth.options[tf.smonth.selectedIndex].value;
+      vy=tf.syear.options[tf.syear.selectedIndex].value;
+      var aday = new Date(vy ,vm-1, vd);
+      if((vy>2011)){ document.location="http://politics.people.com.cn/GB/71751/review/"+vy+vm+vd+".html";}
+      else if ((vd<01)&&(vm<01)&&(vy=2011))
+      { window.alert("回顾请从2011年01月01日开始");}
+      else    {
+        document.location="http://politics.people.com.cn/GB/71751/review/"+vy+vm+vd+".html";}
+    }
+    function resetselect () {
+      var mydate = new Date();
+      var myyear = mydate.getFullYear();
+      var mymonth = mydate.getMonth()+1;
+      var mytoday = mydate.getDate();
+      if(new String(mymonth).length==1)mymonth="0"+new String(mymonth);
+      if(new String(mytoday).length==1)mytoday="0"+new String(mytoday);
+      document.dateform.syear.value=myyear;
+      document.dateform.smonth.value=mymonth;
+      document.dateform.sday.value=mytoday;
+    }
+  </script>
+  <SCRIPT language=JavaScript>
+    function MM_jumpMenu(targ,selObj,restore){
+      eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+      if (restore) selObj.selectedIndex=0;
+    }
+
+  </SCRIPT>
+  <script src="/img/2010cpc_lishishangdejintian/cpc_review.js" language="javascript"></script>
+  <!--[if IE 6]>
+  <style type="text/css">
+
+  </style>
+  <![endif]-->
+
+
+  <!--[if !IE]><!-->
+  <style type="text/css">
+
+  </style>
+  <!--<![endif]-->
+
+</head>
+
+<body>
+<!--top-->
+<div class="top01 width884 clear"> <a href="http://www.people.com.cn/" target="_blank"><img src="/img/2010cpc_lishishangdejintian/images/nav01.gif" width="96" height="42" alt=" " /></a><br />
+  <i><a href='http://cpc.people.com.cn/' target='_blank'><font color='#800000'><b>中国共产党新闻网</b></font></a><a href='http://dangshi.people.com.cn/' target='_blank'><font color='#800000'><b>党史频道</b></font></a></i>
+</div>
+<div class="top02 clear">
+  <div class="width884"><img src="/img/2010cpc_lishishangdejintian/images/top01.jpg" width="176" height="226" /><img src="/img/2010cpc_lishishangdejintian/images/top02.jpg" width="197" height="226" alt=" " /><img src="/img/2010cpc_lishishangdejintian/images/top03.jpg" width="191" height="226" alt=" " /><img src="/img/2010cpc_lishishangdejintian/images/top04.jpg" width="185" height="226" alt=" " /><img src="/img/2010cpc_lishishangdejintian/images/top05.jpg" width="135" height="226" /></div>
+</div>
+<div class="top03 clearfix clear">
+  <div class="width884">
+    <span><a href="http://cpc.people.com.cn/" target="_blank"><img src="/img/2010cpc_lishishangdejintian/images/logo.gif" width="134" height="40" alt=" " /></a></span>
+    <dl class="white">
+      <!---->
+      <dt><form name="dateform" method="post" onsubmit="return false">按日期查找：
+        <select name="smonth">
+          <option selected>请选择</option>
+          <option value="01">一月</option>
+          <option value="02">二月</option>
+          <option value="03">三月</option>
+          <option value="04">四月</option>
+          <option value="05">五月</option>
+          <option value="06">六月</option>
+          <option value="07">七月</option>
+          <option value="08">八月</option>
+          <option value="09">九月</option>
+          <option value="10">十月</option>
+          <option value="11">十一月</option>
+          <option value="12">十二月</option>
+        </select>
+        <select name="sday">
+          <option selected>请选择</option>
+          <option value="01">一日</option>
+          <option value="02">二日</option>
+          <option value="03">三日</option>
+          <option value="04">四日</option>
+          <option value="05">五日</option>
+          <option value="06">六日</option>
+          <option value="07">七日</option>
+          <option value="08">八日</option>
+          <option value="09">九日</option>
+          <option value="10">十日</option>
+          <option value="11">十一日</option>
+          <option value="12">十二日</option>
+          <option value="13">十三日</option>
+          <option value="14">十四日</option>
+          <option value="15">十五日</option>
+          <option value="16">十六日</option>
+          <option value="17">十七日</option>
+          <option value="18">十八日</option>
+          <option value="19">十九日</option>
+          <option value="20">二十日</option>
+          <option value="21">二十一日</option>
+          <option value="22">二十二日</option>
+          <option value="23">二十三日</option>
+          <option value="24">二十四日</option>
+          <option value="25">二十五日</option>
+          <option value="26">二十六日</option>
+          <option value="27">二十七日</option>
+          <option value="28">二十八日</option>
+          <option value="29">二十九日</option>
+          <option value="30">三十日</option>
+          <option value="31">三十一日</option>
+        </select>
+        <input type="submit" name="Submit" value="查看信息" onClick="go()">
+      </form></dt>
+      <form action="http://search.people.com.cn/rmw/GB/cpcsearch/gj_search_pd.jsp" name="searchForm" method="post"  onsubmit="if(getParameter_DJ('ALL') == false) return false;" target="_blank">
+        <input type="hidden" name="XMLLIST">
+        <dd>搜索：<input type="text" name="names" id="names" style="width:158px; height:20px;" />&nbsp;<input type="submit"  value="确定" /></dd></form>
+    </dl>
+  </div>
+</div>
+<!--top end-->
+<!--p1-->
+<div class="p1_content clearfix">
+  <div class="width884 p1_01">
+    <div class="left">
+
+      <div id="wwdiv"></div>
+      <script type="text/javascript">
+
+        var wwvars = {
+          monthnum: 10,
+          daynum: 23
+        };
+        swfobject.embedSWF("/img/2010cpc_lishishangdejintian/dangshi.swf?"+Math.random(), "wwdiv", "278", "281", "9.0.0", "",wwvars,false,false);
+      </script>
+
+    </div>
+    <div class="right">
+      <h2><img src="/img/2010cpc_lishishangdejintian/images/p1_01.gif" width="127" height="42" alt=" " /></h2>
+      <p>“党史上的今天”自2011年1月1日开办以来，受到广大读者的欢迎。截至去年年底，点击量已超过20亿人次，成为庆祝建党90周年网上系列栏目中推出时间最早、持续时间最长、链接网站最多、访问量最高的栏目。<br>　　中国共产党的历史波澜壮阔，学习宣传党的历史任重道远。为满足广大党员、干部、群众和青少年学习中国共产党历史的需要，我们将继续办好这一栏目，每天更新内容，欢迎广大网友继续关注和支持，并对我们的工作提出意见建议。<br>　　网络天地宽又广，党史连着你我他。愿为您服务，让我们同行！</p>
+    </div>
+  </div>
+  <!--content-->
+  <div class="p1_02 clearfix width884">
+    <h1 class="red">党史上的今天</h1>
+
+
+
+    <h2>1945年10月23日&nbsp;&nbsp;中央指出：对内蒙的基本方针是实行区域自治</h2><p>1945年10月23日  中共中央就内蒙古工作的基本方针问题向晋察冀中央局和晋绥分局发出指示，指出：“对内蒙的基本方针，在目前是实行区域自治。首先从各旗开始，争取时间，放手发动与组织蒙人的地方自治运动，建立自治政府。”党的民族区域自治政策，是运用马克思列宁主义关于民族问题的学说解决中国民族问题的基本政策。这个政策，符合中国各民族关系的情况，对于实现各民族一律平等、促进民族团结，产生了深远的影响。</p><h2>1951年10月23日&nbsp;&nbsp;毛泽东：增加生产，厉行节约，以支持中国人民志愿军</h2><p>1951年10月23日  毛泽东在全国政协一届三次会议上提出，为了继续坚持抗美援朝这个必要的正义的斗争，我们需要继续加强抗美援朝的工作，需要增加生产，厉行节约，以支持中国人民志愿军，这是中国人民今天的中心任务。会议向全国各民族、各阶层人民发出开展增产节约运动的号召。增加生产，厉行节约，既是保证抗美援朝前线物资供应的需要，又是准备开展大规模经济建设，为国家工业化积累资金的需要，同时也是整肃党纪、政纪，提高工作效率和转变社会风气的需要，是国家建设的一项带根本性的方针。</p><h2>1953年10月23日&nbsp;&nbsp;第一届中华全国工商业联合会会员代表大会开幕</h2><p>1953年10月23日  第一届中华全国工商业联合会会员代表大会开幕。根据毛泽东同民主党派和工商界部分代表谈话的精神，大会主席陈叔通在开幕词中号召全国工商界人士要为实行国家在过渡时期的总路线，正确地发挥私营工商业的积极作用而奋斗。李维汉到会发表讲话，阐述了党对私营工商业的有关政策，尤其对各种形式的国家资本主义作了具体说明。大会于11月12日通过决议，郑重宣告接受和拥护国家在过渡时期的总路线和对私营工商业所采取的利用、限制、改造的政策。会后，中华全国工商业联合会在工商界开展了学习宣传过渡时期总路线的活动。</p><h2>1985年10月23日　邓小平：社会主义和市场经济之间不存在根本矛盾</h2><p>1985年10月23日　邓小平会见美国时代公司组织的美国高级企业家代表团时强调：社会主义和市场经济之间不存在根本矛盾。问题是用什么方法才能更有力地发展社会生产力。在某种意义上说，只搞计划经济会束缚生产力的发展。把计划经济和市场经济结合起来，就更能解放生产力，加速经济发展。对于改革中出现的一些消极现象，我们主要通过两个手段解决，一个是教育，一个是法律。</p>
+  </div>
+</div>
+<!--p1 end-->
+<!--copyright-->
+<div class="copyright width884 white clear">人 民 网 版 权 所 有 ，未 经 书 面 授 权 禁 止 使 用<br />
+  Copyright &copy; 1997-2013 by www.people.com.cn. all rights reserved</div>
+<script src="/css/2010tianrun/webdig_test.js" language="javascript" type="text/javascript"></script>
+</body>
+</html>
+
