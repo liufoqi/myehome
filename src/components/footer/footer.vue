@@ -40,7 +40,6 @@
 
 <style scoped lang="scss">
 .footer {
-  height: 46px;
   font-size: 10px;
   width: 100%;
   .padding{

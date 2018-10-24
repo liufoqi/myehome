@@ -1,10 +1,12 @@
 <template>
 <div class="main">
  <div class="title">
+   <Header :title="title" v-if="this.type===0"></Header>
    <Header :title="title1" v-if="this.type===1"></Header>
- <Header :title="title4" v-else-if="this.type===4"></Header>
- <Header :title="title6" v-else-if="this.type===6"></Header>
-   <Header :title="title" v-else></Header>
+   <Header :title="title4" v-if="this.type===4"></Header>
+   <Header :title="title6" v-if="this.type===6"></Header>
+   <Header :title="title8" v-if="this.type===8"></Header>
+
  </div>
   <div class="list" v-for="(item,index) in list" :key="index" >
     <router-link :to="{path:'/anytime',query:{newsId:item.newsId}}" >
@@ -31,6 +33,7 @@
           title1:'特色活动',
           title4:"制度建设",
           title6:'随时随地学',
+          title8:'政治学习',
           list:[],
         }
       },
@@ -38,6 +41,7 @@
         getData(){
           this.$axios.get(`/hhdj/news/newsList.do?page=1&rows=10&type=${this.type}`).then(res=>{
             console.log(res.data.rows);
+            this.type=res.data.rows[0].type;
             this.list=res.data.rows
           })
         }

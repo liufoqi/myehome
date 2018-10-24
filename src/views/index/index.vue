@@ -1,7 +1,7 @@
 <template>
-<div class="main">
+<div class="main-content">
   <div class="main-header">
-    <Header></Header>
+    <Header class="header"></Header>
   </div>
   <div class="main-wrap">
     <div class="main">
@@ -74,7 +74,7 @@
     </div>
   </div>
   <div class="main-footer">
-    <Footer></Footer>
+    <Footer class="footer"></Footer>
 </div>
 </div>
 </template>
@@ -135,7 +135,7 @@
     mounted() {
       setInterval(() => {
         // console.log('simulate async data')
-        let swiperSlides = this.swiperSlides
+        // let swiperSlides = this.swiperSlides
         if (this.swiperSlides.length < this.swiperSlides.length) {
           this.swiperSlides.push(this.swiperSlides.length + 1)
         }
@@ -150,7 +150,7 @@
         })
       },
       handle(path){
-        this.$router.push ({path:path,query:{type:"0"}})
+        this.$router.push ({path:path,query:{type:0}})
       }
 
     },
@@ -274,7 +274,8 @@
   .el-carousel__item:nth-child(2n+1) {
     background-color: #d3dce6;
   }
-  .main{
+  .main-content{
+    height: 100%;
     .main-header{
       position: absolute;
       top:0;
@@ -285,13 +286,18 @@
       position: absolute;
       bottom: 0;
       width: 100%;
-      height: 46px;
+      background: #fff;
+      height: 44px;
     }
     .main-wrap{
-      height: 577px;
-      overflow: auto;
-      margin: 44px 0 50px 0;
-      width: 100%;
+      height: calc(667px - 44px*2);
+      .main{
+        height:100%;
+        overflow: auto;
+        margin: 44px 0 50px 0;
+        width: 100%;
+      }
+
     }
   }
 

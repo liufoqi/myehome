@@ -10,6 +10,8 @@ const components={
   Djone:()=>import('@/views/index/partybuilding/index'),
   Dylsf:()=>import('@/views/index/partynumber/index'),
   Zslife:()=>import('@/views/index/organizationLife/index'),
+  Thinkreport:()=>import('@/views/index/organizationLife/thinkReport/index'),
+  Baidumap:()=>import('@/views/index/organizationLife/baidumap/index'),
   History:()=>import('@/views/index/history/index'),
   Anytime:()=>import('@/views/index/anytimeAnyplace/index'),
   ShootAnywhere:()=>import('@/views/index/shootanywhere/index'),
@@ -20,7 +22,6 @@ const components={
   Xgmm:()=>import('@/views/myehome/changePassword/index'),
   Dfjiaona:()=>import('@/views/myehome/partypay/index'),
   Jfdetail:()=>import('@/views/myehome/intergrl/detail'),
-
 
 }
 const router=new Router({
@@ -94,6 +95,14 @@ const router=new Router({
     ,{
       path:'/shootanywhere',
       component:components.ShootAnywhere
+    },
+    {
+      path:'/thinkreport',
+      component:components.Thinkreport
+    },
+    {
+      path:'/baidumap',
+      component:components.Baidumap
     }
 
   ]
